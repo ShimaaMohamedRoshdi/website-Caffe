@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Website-3bootstrap</title>
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark   fixed-top  z-20  ">
+  <div class="container">
+    <a class="navbar-brand" href="#">Coffe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Drinks
+          </a>
+          <ul class="dropdown-menu btn-outline-success">
+            <li><a class="dropdown-item" href="#">Types of caffes</a></li>
+            <li><a class="dropdown-item" href="#">Espresso Caffe</a></li>
+            <li><a class="dropdown-item" href="#">Latee Caffe</a></li>
+            <li><a class="dropdown-item" href="#">Icesd Coffe</a></li>
+
+            <li><a class="dropdown-item" href="#">Mocha Coffe</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+      </ul>
+      <form class="d-flex " role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success me-2 " type="submit">Search</button> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-success me-3 " data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          search
+        </button>
+
+       
+        <button class="btn btn-outline-success me-2" type="submit">login</button>
+         <!-- Modal -->
+         <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <p>We will never share your email with anyone else</p>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Password</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Remeber Me</label>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid">
+  <div class="media-icons">
+    <a href="#" class="-icon"><i class="fab fa-facebook-f bg-black "></i></a><br/>
+     <a href="#" class="media-icon"><i class="fab fa-whatsapp bg-black"></i></a> <br/>
+     <a href="#" class="media-icon"><i class="fab fa-instagram bg-black"></i></a> <br/>
+     <a href="#" class="media-icon"><i class="fab fa-linkedin-in bg-black"></i></a><br/>
+   </div>
+ 
+  <div id="carouselExampleCaptions" class="carousel slide" style="height: 80vh;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner h-100 ">
+      <div class="carousel-item active h-100 w-100">
+        <img src="/images/cafe-3537801_1280.jpg" class="d-block w-100 h-100 " alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark">
+          <h5>Our Caffe in Egypt</h5>
+          <p>located in the heart of city. Our ca offers a wide selection of coffee drinks, pastries, light bites, all made the freshest ingredients a passion for quality.</p>
+          <button class="btn btn-outline-success me-2" type="submit">login</button>
+        </div>
+      </div>
+      <div class="carousel-item h-100 w-100">
+        <img src="/images/coffee-3120750.jpg" class="d-block w-100  h-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark">
+          <h5>Our Caffe in Giza</h5>
+          <p>located in the heart of city. Our ca offers a wide selection of coffee drinks, pastries, light bites, all made the freshest ingredients a passion for quality.</p>
+          <button class="btn btn-outline-success me-2" type="submit">login</button>
+        </div>
+      </div>
+      <div class="carousel-item h-100 w-100">
+        <img src="/images/coffee-5635765_1280.jpg" class="d-block w-100  h-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark">
+          <h5>Our Caffe in Alex</h5>
+          <p>located in the heart of city. Our ca offers a wide selection of coffee drinks, pastries, light bites, all made the freshest ingredients a passion for quality</p>
+          <button class="btn btn-outline-success me-2" type="submit">login</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+  <ul class="list-group">
+    <li class="list-group-item hh  text-light " aria-current="true">Our populars distation in cairo</li>
+
+  </ul>
+</div>
+
+
+
+
+<div class="container-fluid">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Our cafe in Egypt
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+           Open daily from 7:00 am and close at 10:00 pm.
+          On Thursdays, Fridays, and official holidays, the closing time is extended to 11:00 pm1
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed collor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Our cafe in Alex
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Open daily from 7:00 am and close at 10:00 pm.
+         On Thursdays, Fridays, and official holidays, the closing time is extended to 11:00 pm1
+       </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed collor" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Our cafe in luxor
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Open daily from 7:00 am and close at 10:00 pm.
+         On Thursdays, Fridays, and official holidays, the closing time is extended to 11:00 pm1
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bgg">
+  <ul class="list-group">
+    <li class="list-group-item hh  text-light" aria-current="true">Translate From Arabic to English</li>
+
+  </ul>
+
+
+  <div class="container-fluid  ">
+    <div class="translate ">
+      <h5 >Write and translate </h5>
+      <!-- <button type="button" class="btn btn-outline-success me-3 d-inline-block">Copy</button> -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        copy
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h7 class="modal-title" id="staticBackdropLabel"><a>shimaamohamed-code.githup.io says</a></h7>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text"> تم نسخ النص</p>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="Translate" class="form-label "></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Translate" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bgg">
+  <ul class="list-group">
+    <li class="list-group-item hh text-light " aria-current="true">Translate From Arabic to German</li>
+
+  </ul>
+
+
+  <div class="container-fluid  ">
+    <div class="translate ">
+      <h5 >Write and translate </h5>
+      <!-- <button type="button" class="btn btn-outline-success me-3 d-inline-block">Copy</button> -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        copy
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h7 class="modal-title" id="staticBackdropLabel"><a>shimaamohamed-code.githup.io says</a></h7>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text"> تم نسخ النص</p>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="Translate" class="form-label "></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Translate" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bgg">
+  <ul class="list-group">
+    <li class="list-group-item hh text-light " aria-current="true">Translate From Arabic to Frensh</li>
+
+  </ul>
+
+
+  <div class="container-fluid  ">
+    <div class="translate ">
+      <h5 >Write and translate </h5>
+      <!-- <button type="button" class="btn btn-outline-success me-3 d-inline-block">Copy</button> -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        copy
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h7 class="modal-title" id="staticBackdropLabel"><a>shimaamohamed-code.githup.io says</a></h7>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text"> تم نسخ النص</p>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="Translate" class="form-label "></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Translate" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid  ">
+  <ul class="list-group">
+    <li class="list-group-item hhh text-colored " aria-current="true">About our heads</li>
+  </ul>
+
+
+
+
+<div class="container m-auto">
+  <div class="row ">
+    <div class="col-sm-12 col-md-6 col-lg-4 see1  mb-5 rounded-4 ">
+      <div class="layer text-center rounded-4 z-10">
+        <p class="text-light">All thanks and appreciatio</p>
+
+        <div class="divelimage  position-absolute bottom-0  ms-3 mb-3">
+          <img src="/images/istockphoto-1222856780-1024x1024.jpg" alt="" class="rounded-circle img-fluid   "  style="width: 100px; height: 100px;">
+          <p  class="text-light">Eng:Mohamed Abdelraouf</p> 
+          <p class="text-light">Director of UI/UX designer</p> 
+        </div>        <i class="fa-regular fa-clock  ii "></i> <span class="text-light">October 15 ,2023</span>
+    </div>
+      </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 see2   mb-5 rounded-4">
+      <div class="layer  text-center rounded-4 z-10">
+        <p class="text-light">All thanks and appreciatio</p>
+<i class="fa-regular fa-clock  ii"></i> <span class="text-light">October 15 ,2023</span>
+<div class="divelimage  position-absolute bottom-0  ms-3 mb-3">
+  <img src="/images/istockphoto-912760926-1024x1024.jpg" alt="" class="rounded-circle img-fluid   "  style="width: 100px; height: 100px;">
+  <p class="text-light">Eng:Mohamed Abdelraouf</p> 
+  <p class="text-light">Director of UI/UX designer</p> 
+</div>
+</div>
+      </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 see3   mb-5 rounded-4 z-10">
+      <div class="layer  text-center rounded-4">
+        <p class="text-light">All thanks and appreciatio</p>
+<i class="fa-regular fa-clock  ii"></i> <span class="text-light">October 15 ,2023</span>
+
+<div class="divelimage  position-absolute bottom-0  ms-3 mb-3">
+  <img src="/images/istockphoto-919384638-1024x1024.jpg" alt="" class="rounded-circle img-fluid   "  style="width: 100px; height: 100px;">
+  <p class="text-light">Eng:Mohamed Abdelraouf</p> 
+  <p class="text-light">Director of UI/UX designer</p> 
+</div>
+    </div>
+      </div>
+
+
+ 
+  </div>
+</div>
+
+
+
+<div class="container-fluid  ">
+  <ul class="list-group">
+    <li class="list-group-item hhh text-colored " aria-current="true">Complete the form :</li>
+  </ul>
+
+
+
+
+  <div class="container pb-2 mb-4" style="background-color:  rgb(232, 231, 231) ;">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label ">Email address</label>
+      <input type="email" class="form-control w-50" id="exampleFormControlInput1" >
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Password</label>
+      <input type="password" class="form-control w-50" id="exampleFormControlInput1" >
+    </div>
+    <div class="mb-5">
+      <label for="exampleFormControlInput1" class="form-label">telephone No</label>
+      <input type="number" class="form-control w-50 " id="exampleFormControlInput1" >
+    </div>
+    <button type="button" class="btn btn-outline-dark mb-3"> submit</button>
+  </div>
+
+
+
+
+
+<div class="container-fluid">
+  <div class="section">
+
+  </div>
+</div>
+<div class="container-fluid ">
+  <ul class="list-group">
+    <li class="list-group-item hh text-colored " aria-current="true">Popular Cafes in Egypt</li>
+  </ul>
+
+  <div class="container-fluid  ">
+    <div class="row c  ">
+
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5    mmm  " >
+        <img src="/images/pexels-malidate-van-849643.jpg " alt="" class="img-fluid" width="300PX" height="100PX">
+        <h5 class="card-title">Espresso</h5>
+        <p class="card-text">coffee brewed by forcing hot water through finely-ground coffee beans.</p>
+
+        <button type="button" class="btn btn-outline-primary">Click</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-luis-quintero-13720327.jpg " alt="" class="img-fluid" width="300PX" height="200PX">
+        <h5 class="card-title">Americano</h5>
+        <p class="card-text">A simple coffee made by diluting a shot of espresso with hot water.</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-sena-10433619.jpg " alt="" class="img-fluid" width="300PX" height="300PX">
+        <h5 class="card-title">Black Coffee</h5>
+        <p class="card-text">Also known as drip coffee, it’s brewed coffee without any milk or cream.</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-sena-16715908.jpg" alt="" class="img-fluid" width="300PX" height="300PX">
+        <h5 class="card-title">Latte</h5>
+        <p class="card-text">Espresso with steamed milk and a small amount of milk foam.</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-pavel-danilyuk-6612705.jpg" alt="" class="img-fluid" width="300PX" height="300PX">
+        <h5 class="card-title">Macchiato</h5>
+        <p class="card-text">Espresso with a dollop of milk foam..</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-sena-10535902.jpg" alt="" class="img-fluid" width="300PX" height="300PX">
+        <h5 class="card-title">Iced Coffee</h5>
+        <p class="card-text">Chilled coffee served over ice.</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-senanur-ulusoy-15924270.jpg" alt="" class="img-fluid" width="300PX" height="300PX">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on t.</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4  mt-5 mmm ">
+        <img src="/images/pexels-malidate-van-849643.jpg" alt="" class="img-fluid" width="300PX" height="300PX">
+        <h5 class="card-title">Iced Latte</h5>
+        <p class="card-text">Espresso and milk served cold.</p>
+
+        <button type="button" class="btn btn-outline-primary">Choose</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="section1">
+
+  </div>
+
+  <div class="container-fluid ">
+    <ul class="list-group">
+      <li class="list-group-item hhh text-colored " aria-current="true">OFFer Days Of Our Cafes</li>
+    </ul>
+
+
+    <!-- //////////////// -->
+    <div class="container">
+      <div class="news-card card mb-3 mt-5" style="max-width: 1202px;">
+        <div class="row g-0">
+          <div class="news-col2 col-md-4 order-md-2 " style="height: 350px; width: 400px;">
+            <img src="./images/pexels-esranur-kalay-10276926.jpg" alt="important News" class="news-img img-fluid rounded-end h-100 w-100">
+
+          </div>
+          <div class="col-md-8 order-md-1">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2 ">Poadcast</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize">fri , feb 16th 2024</span>
+              <span class="newline d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione?</p>
+              <p class="card-text fs-5 text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione?</p>
+              <p class="card-text fs-5 text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione?</p>
+
+             <div class="post-btn d-flex align-items-end mt-5">
+              <a href="#" class="link-1 btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>Poadcast</a>
+              <a href="#" class="link-2 btn btn-secondary ms-2"><i class="fas fa-clock me-1"></i>55 mins</a>
+              <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-play me-1"></i>play episode</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!-- //////////////////////////// -->
+
+    <div class="container">
+  
+
+      <div class="news-card card mb-3 mt-5" style="max-width: 1202px;">
+        <div class="row g-0">
+          <div class="news-col col-md-4" style="height: 350px; width:400px ;">
+            <img src="./images/pexels-jason-toevs-2068296.jpg" class="img-fluid rounded-end align-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">podacast</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> fri , feb 16th 2024</span>
+              <span class="newline d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptates? Voluptatum impedit aperiam, eligendi perferendis labore quae placeat libero ratione autem maiores, reprehenderit fuga molestias numquam ad harum similique corporis?</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>podcast</a>
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-clock me-1"></i>55 mins</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-play me-1"></i>play episode</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card card mb-3 mt-5" style="max-width: 1202px;">
+        <div class="row g-0">
+          <div class="news-col2 col-md-4 order-md-2" style="height: 350px; width:400px ;">
+            <img src="./images/pexels-solodsha-8105092.jpg" class="news-img img-fluid rounded-end align-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8 order-md-1">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">podacast</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> fri , feb 16th 2024</span>
+              <span class="newline d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptates? Voluptatum impedit aperiam, eligendi perferendis labore quae placeat libero ratione autem maiores, reprehenderit fuga molestias numquam ad harum similique corporis?</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>podcast</a>
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-clock me-1"></i>55 mins</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-play me-1"></i>play episode</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card card mb-3 mt-5" style="max-width: 1202px;">
+        <div class="row g-0">
+          <div class="news-col col-md-4" style="height: 350px; width:400px ;">
+            <img src="./images/pexels-solodsha-8105087.jpg" class="news-img img-fluid rounded-end align-end h-100 w-100" alt="important news">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="news-text card-title fs-1 mb-1 mt-2">podacast</h5>
+              <i class="fas fa-calendar-alt "></i>
+              <span class="news-date w-100 mb-3 text-capitalize"> fri , feb 16th 2024</span>
+              <span class="newline d-block mt-2 mb-2"></span>
+              <p class="card-text fs-5 text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptates? Voluptatum impedit aperiam, eligendi perferendis labore quae placeat libero ratione autem maiores, reprehenderit fuga molestias numquam ad harum similique corporis?</p>
+              <div class="post-btn d-flex align-items-end mt-5">
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-tag me-1"></i>podcast</a>
+                <a href="#" class="btn btn-secondary ms-2"><i class="fas fa-clock me-1"></i>55 mins</a>
+                <a href="#" class="link-3 btn btn-secondary ms-2"><i class="fas fa-play me-1"></i>play episode</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid ">
+  <ul class="list-group">
+    <li class="list-group-item hhh text-colored " aria-current="true">Join Us</li>
+  </ul>
+  <!-- ////////////////////////////////// -->
+
+  <div class="container join  d-flex  align-items-center justify-content-around ">
+    <div class="row  ">
+   <div class=" col-sm-12 col-md-6 col-lg-3   " style="width: 250px; height:250px" >
+  <div class="blockk kk rounded-3 ">
+    <h5 class="title-join ">Subscribe Now</h5>
+    <i id="facebook-icon" class="fa-brands fa-facebook bg-dark text-light fafa rounded-4  " style="width: 100px; height:100px"></i>
+    <br/>
+    <h7 class="title-join">Go To Link</h7>
+  </div>
+   </div>
+   <div class=" col-sm-12 col-md-6 col-lg-3  " style="width: 250px; height:250px">
+  <div class="block kk rounded-3 ">
+    <h5 class="title-join ">Subscribe Now</h5>
+    <i id="facebook-icon" class="fa-brands fa-instagram bg-dark text-light fafa rounded-4  " style="width: 100px; height:100px"></i>
+    <br/>
+    <h7 class="title-join">Go To Link</h7>
+  </div>
+   </div>
+   <div class=" col-sm-12 col-md-6 col-lg-3 " style="width: 250px; height:250px">
+  <div class="block kk rounded-3 ">
+    <h5 class="title-join ">Subscribe Now</h5>
+    <i id="facebook-icon" class="fa-brands fa-twitter bg-dark text-light fafa rounded-4  " style="width: 100px; height:100px"></i>
+    <br/>
+    <h7 class="title-join">Go To Link</h7>
+  </div>
+   </div>
+   <div class=" col-sm-12 col-md-6 col-lg-3 " style="width: 250px; height:250px">
+  <div class="block kk rounded-3 ">
+    <h5 class="title-join ">Subscribe Now</h5>
+    <i id="facebook-icon" class="fa-brands fa-whatsapp bg-dark text-light fafa rounded-4  " style="width: 100px; height:100px"></i>
+    <br/>
+    <h7 class="title-join">Go To Link</h7>
+  </div>
+   </div>
+
+   
+    </div>
+  </div>
+
+<!-- /////////////////////////////////////// -->
+
+
+
+  <!-- ///////////////////////////////////////////////////////////////////// -->
+  <footer class="text-center text-white" style="background-color:black">
+  <div class="container-fluid ">
+    <div class="row footer">
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <hr>
+        <h5 class="font-weight-bold mb-4">Good Cafe</h5>
+        <hr>
+        <p>tel:000-000-000</p>
+        <p>Address :Egypt</p>
+        <p>Fax:000-000-000</p>
+        <hr>
+      </div>
+    
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <hr>
+        <img src="/images/coffee-lover-desktop-wallpaper-background-with-cute-wording.jpg"  alt="" style="width: 250px; height: 60px;">
+      <p><a>Visit Us</a></p> 
+   
+      <p>  <a>Take a look</a></p>
+       
+       <p> <a>Your Health is more important</a></p>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <hr>
+      <h5 class="font-weight-bold mb-4">Vision</h5>
+      <hr>
+      <p>Services for all</p>
+     
+      <p>Provide best services</p>
+      <p>You will be better than before</p>
+      <hr>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" >
+      </div>
+      <button type="button" class="btn btn-danger mb-3">Join Us</button>
+    </div>
+  </div>
+  </div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    </body>
+
+</html>
